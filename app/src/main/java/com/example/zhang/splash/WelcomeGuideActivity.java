@@ -81,6 +81,7 @@ public class WelcomeGuideActivity extends AppCompatActivity implements View.OnCl
     @Override
     protected void onStop() {
         super.onStop();
+
     }
 
     @Override
