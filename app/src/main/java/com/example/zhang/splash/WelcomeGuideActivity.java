@@ -55,7 +55,7 @@ public class WelcomeGuideActivity extends AppCompatActivity implements View.OnCl
 
             if (i == pics.length - 1) {//最后一个界面有按钮
                 startBtn = (Button) view.findViewById(R.id.btn_enter);
-                startBtn.setTag("enter");
+//                startBtn.setTag("enter");//给按钮添加一个标签
                 startBtn.setOnClickListener(this);
             }
             views.add(view);
@@ -109,10 +109,15 @@ public class WelcomeGuideActivity extends AppCompatActivity implements View.OnCl
 
     @Override
     public void onClick(View v) {
-        if (v.getTag().equals("enter")) {
+        /*if (v.getTag().equals("enter")) {
+            enterMainActivity();
+            return;
+        }*/
+        if(v.getId() == R.id.btn_enter){
             enterMainActivity();
             return;
         }
+
 
         int position = (Integer) v.getTag();
         setCurView(position);
