@@ -35,6 +35,7 @@ public class SplashActivity extends AppCompatActivity {
     private static final float SCALE_END = 1.15F;
     private static final int ANIM_TIME = 2000;
 
+    //图片的集合，随机产生一张图片，进行动画
     private static final int[] Imgs={
             R.drawable.welcomimg1,R.drawable.welcomimg2,
             R.drawable.welcomimg3,R.drawable.welcomimg4,
