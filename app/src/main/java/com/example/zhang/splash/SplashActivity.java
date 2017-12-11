@@ -35,6 +35,7 @@ public class SplashActivity extends AppCompatActivity {
     private static final float SCALE_END = 1.15F;
     private static final int ANIM_TIME = 2000;
 
+    //图片的集合，随机产生一张图片，进行动画
     private static final int[] Imgs={
             R.drawable.welcomimg1,R.drawable.welcomimg2,
             R.drawable.welcomimg3,R.drawable.welcomimg4,
@@ -42,7 +43,6 @@ public class SplashActivity extends AppCompatActivity {
             R.drawable.welcomimg7,R.drawable.welcomimg8,
             R.drawable.welcomimg9,R.drawable.welcomimg10,
             R.drawable.welcomimg11,R.drawable.welcomimg12};
-
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -66,11 +66,9 @@ public class SplashActivity extends AppCompatActivity {
         startMainActivity();
 
     }
-
     private void initView() {
         mIVEntry = (ImageView) findViewById(R.id.iv_entry);
     }
-
 
     private void startMainActivity() {
         Random random = new Random(SystemClock.elapsedRealtime());//SystemClock.elapsedRealtime():从开始到现在的毫秒数（包括睡眠时间）
