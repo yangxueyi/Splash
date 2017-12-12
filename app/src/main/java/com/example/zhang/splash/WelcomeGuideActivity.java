@@ -33,8 +33,7 @@ public class WelcomeGuideActivity extends AppCompatActivity implements View.OnCl
 
 
     // 引导页图片资源
-    private static final int[] pics = { R.layout.guide_view1,
-            R.layout.guide_view2, R.layout.guide_view3};
+    private static final int[] pics = { R.layout.guide_view1,R.layout.guide_view2, R.layout.guide_view3};
 
     // 底部小点图片
     private ImageView[] dots;
@@ -66,7 +65,6 @@ public class WelcomeGuideActivity extends AppCompatActivity implements View.OnCl
         vp.setAdapter(new GuideViewPagerAdapter(views));
         //ViewPager的滚动监听
         vp.addOnPageChangeListener(new PageChangeListener());
-
         //添加底部圆点
         initDots();
     }
@@ -117,7 +115,6 @@ public class WelcomeGuideActivity extends AppCompatActivity implements View.OnCl
             enterMainActivity();
             return;
         }
-
 
         int position = (Integer) v.getTag();
         setCurView(position);
