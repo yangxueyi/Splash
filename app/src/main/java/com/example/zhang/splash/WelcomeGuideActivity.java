@@ -41,6 +41,7 @@ public class WelcomeGuideActivity extends AppCompatActivity implements View.OnCl
     // 记录当前选中位置
     private int currentIndex;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
